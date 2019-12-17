@@ -4,10 +4,110 @@ permalink: '/'
 title: Homepage
 head_title: ''
 description: ''
+amp_components:
+  - amp-carousel
+  - amp-fit-text
 ---
 
 {% for _page in site.pages %}
-  {% if _page.settings %}
-    {% assign settings = _page %}
-  {% endif %}
+{% if _page.settings %} 
+{% assign settings = _page %} 
+{% endif %} 
 {% endfor %}
+
+<!doctype html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- Import other AMP Extensions here -->
+    <style amp-custom>
+    /* Add your styles here */
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+ 
+    <link rel="canonical" href=".">
+    <title>My AMP Page</title>
+  </head>
+  <body>
+
+    <amp-carousel width="1280"
+    height="720"
+    layout="responsive"
+    type="slides"
+    autoplay
+    loop
+    animate-in="fade-in"
+    animate-in-duration=".5s"
+    delay="4000">
+    <div class="slide">
+      <amp-img src="/assets/images/hero-wood-owl.jpg"
+        width="400"
+        height="300"
+        layout="responsive"
+        animate-in="fade-in"
+        animate-in-duration=".5s"
+        alt="a sample image"></amp-img>
+        <div style="background-color: rgba(0, 0, 0, 0.13); 
+        color: white; width: 80%; position:absolute; top:10%; left: 10%;">
+        <amp-fit-text 
+            width="200" height="50" layout="responsive">
+            WELCOME TO THE FAMILY
+        </amp-fit-text>
+    </div>
+  
+    </div>
+  
+    <amp-img src="/assets/images/hero-waitingroom.jpg"
+      width="400"
+      height="300"
+      layout="responsive"
+      animate-in="fade-in"
+      animate-in-duration=".5s"
+      alt="another sample image"></amp-img>
+    <amp-img src="/assets/images/hero-outside.jpg"
+      width="400"
+      height="300"
+      layout="responsive"
+      animate-in="fade-in"
+      animate-in-duration=".5s"
+      alt="and another sample image"></amp-img>
+  </amp-carousel>
+  
+  <section>
+    <div>
+
+    </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm col-md-4">
+        One of three columns
+      </div>
+      <div class="col-sm col-md-4">
+        <amp-img src="assets/images/logo-full.png"
+        width="300"
+        height="300"
+        layout="fixed"
+        animate-in="fade-in"
+        animate-in-duration=".5s"
+        alt="and another sample image"></amp-img>
+      </div>
+      <div class="col-sm col-md-4">
+        One of three columns
+      </div>
+    </div>
+  </div>
+
+  </section>
+  </body>
+</html>
+
+
+
+
+
+

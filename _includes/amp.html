@@ -61,7 +61,11 @@
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 
 {% if site.baseurl == '/amp' %}
-<script async custom-element="amp-call-tracking" src="https://cdn.ampproject.org/v0/amp-call-tracking-0.1.js"></script>
+<script
+  async
+  custom-element="amp-call-tracking"
+  src="https://cdn.ampproject.org/v0/amp-call-tracking-0.1.js"
+></script>
 {% endif %}
 
 <script
@@ -81,6 +85,7 @@
   custom-element="amp-bind"
   src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
 ></script>
+
 
 <script
   async
@@ -126,50 +131,37 @@
   custom-element="amp-position-observer"
   src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"
 ></script>
-{% endif %}
-
-{% if page.amp_components contains 'amp-animation' %}
+{% endif %} {% if page.amp_components contains 'amp-animation' %}
 <script
   async
   custom-element="amp-animation"
   src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"
 ></script>
-{% endif %}
-
-{% if page.amp_components contains 'amp-date-picker' %}
+{% endif %} {% if page.amp_components contains 'amp-date-picker' %}
 <script
   async
   custom-element="amp-date-picker"
   src="https://cdn.ampproject.org/v0/amp-date-picker-0.1.js"
 ></script>
-{% endif %}
-
-{% if page.amp_components contains 'amp-youtube' %}
+{% endif %} {% if page.amp_components contains 'amp-youtube' %}
 <script
   async
   custom-element="amp-youtube"
   src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"
 ></script>
-{% endif %}
-
-{% if page.amp_components contains 'amp-video' %}
+{% endif %} {% if page.amp_components contains 'amp-video' %}
 <script
   async
   custom-element="amp-video"
   src="https://cdn.ampproject.org/v0/amp-video-0.1.js"
 ></script>
-{% endif %}
-
-{% if page.amp_components contains 'amp-fx' %}
+{% endif %} {% if page.amp_components contains 'amp-fx' %}
 <script
   async
   custom-element="amp-fx-collection"
   src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"
 ></script>
-{% endif %}
-
-
-{% if page.amp_components contains 'amp-fit-text' %}
+{% endif %} {% if page.amp_components contains 'amp-fit-text' %}
 <script
   async
   custom-element="amp-fit-text"
