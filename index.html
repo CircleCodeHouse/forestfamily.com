@@ -15,27 +15,9 @@ amp_components:
 {% endif %} 
 {% endfor %}
 
-<!doctype html>
-<html ⚡ lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="This is the AMP Boilerplate.">
-    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <!-- Import other AMP Extensions here -->
-    <style amp-custom>
-    /* Add your styles here */
-    </style>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
- 
-    <link rel="canonical" href=".">
-    <title>My AMP Page</title>
-  </head>
-  <body>
 
     <amp-carousel width="1280"
-    height="720"
+    height="900"
     layout="responsive"
     type="slides"
     autoplay
@@ -99,34 +81,107 @@ amp_components:
 
 </amp-carousel>
   
-  
+<!-- Logo Section -->
   <section>
 <div class="bg-brand-primary-dark">
 
-  <div class="container ">
+  <div class="container-fluid py-4">
     <div class="row">
-      <div class="col-sm col-md-4 text-center">
-        WHO WE ARE
+      <div class="col p-4 text-center">
+        <h2>
+          WHO WE ARE
+        </h2>
+        <button class="ampstart-btn ampstart-btn-secondary">
+          SUBMIT
+        </button>
       </div>
-      <div class="col-sm col-md-4 text-center">
+    </div>
+
+    <div class="row">
+
+      <div class="col text-center">
         <amp-img src="assets/images/logo-full.png"
         width="300"
         height="300"
         layout="fixed"
-        animate-in="fade-in"
-        animate-in-duration=".5s"
         alt="and another sample image"></amp-img>
       </div>
-      <div class="col-sm col-md-4 text-center">
-        Dental professionals with the mission to create an enjoyable & efficient experience for you.
+    </div>
+
+    <div class="row">
+      <div class="col p-4 text-center">
+        <h2>
+          Dental professionals with the mission to create an enjoyable & efficient experience for you.
+        </h2>
       </div>
+
+    </div>
     </div>
   </div>
 </div>
 
   </section>
-  </body>
-</html>
+
+<!-- Locations Section -->
+<section>
+<div class="bg-brand-secondary-dark">
+  <div class="container-fluid py-4">
+    <div class="row">
+      <div class="col p-4 text-center">
+        <h2>LOCATIONS</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-4 text-center">
+        <amp-img src="/assets/images/hero-outside.jpg"
+        width="400"
+        height="300"
+        layout="responsive"
+        animate-in="fade-in"
+        animate-in-duration=".5s"
+        alt="and another sample image"></amp-img>
+        <div>WORDS</div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 text-center">
+        <amp-img src="/assets/images/hero-outside.jpg"
+        width="400"
+        height="300"
+        layout="responsive"
+        animate-in="fade-in"
+        animate-in-duration=".5s"
+        alt="and another sample image"></amp-img>
+        <div>WORDS</div>
+      </div>
+
+      <div class="col-sm-12 col-md-4 text-center">
+        <amp-img src="/assets/images/hero-outside.jpg"
+        width="400"
+        height="300"
+        layout="responsive"
+        animate-in="fade-in"
+        animate-in-duration=".5s"
+        alt="and another sample image"></amp-img>
+        <div>WORDS</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col p-4 text-center">
+          <h2>
+
+            HOURS LIST
+          </h2>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+</section>
+
 
 
 
