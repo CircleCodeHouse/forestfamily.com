@@ -1,12 +1,24 @@
-{% for _page in site.pages %}
-  {% if _page.settings %}
-    {% assign settings = _page %}
-  {% endif %}
+{% for _page in site.pages %} 
+{% if _page.settings %} 
+{% assign settings = _page %} 
+{% endif %} 
 {% endfor %}
+
 <footer>
   <div class="container-fluid py-4 footer bg-brand-primary-light">
+    <div class="col text-center">
+      forest family
+    </div>
+
     <div class="d-flex justify-content-center mb-3">
-      <amp-img src="{{ settings.seal }}" class="justify-content-center" width="150" height="150"></amp-img>
+
+      <amp-img
+        src="{{ settings.seal }}"
+        class="justify-content-center"
+        width="400"
+        height="200"
+        layout="fixed"
+      ></amp-img>
     </div>
     <ul class="nav justify-content-center">
       <li class="nav-item">
@@ -28,7 +40,8 @@
   </div>
   <div class="text-center bg-brand-primary-dark">
     <small class="text-muted">
-      Copyright © {{ site.time | date: '%Y' }} {{ settings.footer_text | liquify }}
+      Copyright © {{ site.time | date: '%Y' }} {{ settings.footer_text | liquify
+      }}
     </small>
   </div>
 </footer>
