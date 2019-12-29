@@ -1,0 +1,98 @@
+---
+layout: default
+permalink: '/appointment'
+title: appointment
+head_title: ''
+description: ''
+amp_components:
+  - amp-carousel
+  - amp-fit-text
+---
+
+{% for _page in site.pages %}
+{% if _page.settings %} 
+{% assign settings = _page %} 
+{% endif %} 
+{% endfor %}
+
+
+    <amp-carousel width="1280"
+    height="720"
+    layout="responsive"
+    type="slides"
+    autoplay
+    loop
+    animate-in="fade-in"
+    animate-in-duration=".5s"
+    delay="4000">
+    <div class="slide">
+      <amp-img src="assets/images/hero-inside-office.jpg"
+        width="400"
+        height="250"
+        layout="responsive"
+        animate-in="fade-in"
+        animate-in-duration=".5s"
+        alt="a sample image"></amp-img>
+        <div style="width: 80%; position:absolute; top:10%; left: 10%;">
+        <amp-fit-text 
+            class="text-light text-center font-weight-bold display-2" width="200" height="50" layout="responsive">
+            RESERVE YOUR APPOINTMENT
+        </amp-fit-text>
+    </div>
+  
+  </div>
+
+</amp-carousel>
+  
+<!-- Reserve Appointment Section -->
+<section>
+  <div class="bg-brand-primary-dark">
+  
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col p-4 text-center">
+          <button type="button" class="btn btn-outline-light btn-lg rounded-0 bg-brand-primary-dark"><h2 class="display-4">APPOINTMENT REQUEST</h2> </button>
+        </div>
+      </div>
+  
+      <div class="row justify-content-center">
+        <div class="col-sm-10 col-md-5 p-4 text-center">
+          <form class="sample-form"
+          method="GET"
+          action="/documentation/examples/api/submit-form"
+          target="_top">
+          <input type="search"
+            placeholder="Search..."
+            name="search">
+          <input type="submit"
+            value="OK">
+        </form>
+        </div>
+  
+        <div class="col-sm-10 col-md-5 p-4 text-center">
+          <form class="sample-form"
+          method="GET"
+          action="/documentation/examples/api/submit-form"
+          target="_top">
+          <input type="search"
+            placeholder="Search..."
+            name="search">
+          <input type="submit"
+            value="OK">
+        </form>
+        
+        </div>
+
+      </div>
+      </div>
+    </div>
+  
+    </section>
+
+
+
+
+
+
+
+
