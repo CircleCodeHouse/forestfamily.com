@@ -8,10 +8,10 @@ amp_components:
 - amp-carousel
 - amp-fit-text
 carousel:
-- assets/images/hero-wood-owl.jpg
-- assets/images/hero-waitingroom.jpg
-- assets/images/hero-outside.jpg
-- assets/images/hero-dentist-chair.jpg
+- assets/uploads/hero-wood-owl.jpg
+- assets/uploads/hero-waitingroom.jpg
+- assets/uploads/hero-outside.jpg
+- assets/uploads/hero-dentist-chair.jpg
 ---
 
 {% for _page in site.pages %}
@@ -52,7 +52,7 @@ carousel:
     </div>
     <div class="row">
       <div class="col text-center">
-        <amp-img src="/assets/images/logo-full.png" width="300" height="300" layout="fixed"
+        <amp-img src="/assets/uploads/logo-full.png" width="300" height="300" layout="fixed"
           alt="and another sample image"></amp-img>
       </div>
     </div>
@@ -68,75 +68,13 @@ carousel:
 </section>
 
 <!-- Locations Section -->
-<section>
-  <div class="bg-brand-secondary-dark">
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col p-4 text-center">
-          <button type="button" class="btn btn-outline-light btn-lg rounded-0 bg-brand-secondary-dark">
-            <h2 class="display-4">LOCATIONS</h2>
-          </button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-4 text-center">
-          <amp-img src="/assets/images/hero-dentist-chair.jpg" width="300" height="200" layout="responsive"
-            animate-in="fade-in" animate-in-duration=".5s" alt="and another sample image"></amp-img>
-          <div>
-            <div class="text-center p-4">
-              <h3>Anderson LN</h3>
-              <div class="border-top my-0"></div>
-              <div>2700 Anderson LN #418</div>
-              <div>Austin, TX 78757</div>
-              <div>512.334.9894</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-4 text-center">
-          <amp-img src="/assets/images/hero-wood-owl.jpg" width="300" height="200" layout="responsive"
-            animate-in="fade-in" animate-in-duration=".5s" alt="and another sample image"></amp-img>
-          <div>
-            <div class="text-center p-4">
-              <h3>Research BLVD</h3>
-              <div class="border-top my-0"></div>
-              <div>10721 Research BLVD B180</div>
-              <div>Austin, TX 78759</div>
-              <div>512.358.4979</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-4 text-center">
-          <amp-img src="/assets/images/hero-waitingroom.jpg" width="300" height="200" layout="responsive"
-            animate-in="fade-in" animate-in-duration=".5s" alt="and another sample image"></amp-img>
-          <div>
-            <div class="text-center p-4">
-              <h3>Gattis School RD</h3>
-              <div class="border-top my-0"></div>
-              <div>2681 Gattis School RD #270</div>
-              <div>Round Rock, TX 78664</div>
-              <div>512.494.4459</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-4 p-4 mt-4 text-center">
-          <h4>
-            Hours (all location)
-          </h4>
-          <div class="border-top my-0"></div>
-          <div>Mon (8:30am - 5:30pm)</div>
-          <div>Tue (7:30am - 7:30pm)</div>
-          <div>Wed (7:30am - 7:30pm)</div>
-          <div>Thu (7:30am - 7:30pm)</div>
-          <div>Fri (8:30am - 5:30pm)</div>
-          <div>Sat (9am -2pm)</div>
-        </div>
-      </div>
+<section class="container-fluid px-0 bg-brand-secondary-dark">
+  <div class="row">
+    <div class="col p-4 text-center">
+      <button type="button" class="btn btn-outline-light btn-lg rounded-0 bg-brand-secondary-dark">
+        <h2 class="display-4">LOCATIONS</h2>
+      </button>
     </div>
   </div>
-
+  {% include locations.html %}
 </section>

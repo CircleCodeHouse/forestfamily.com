@@ -15,141 +15,54 @@ amp_components:
 {% endfor %}
 
 <!-- Logo Section -->
-  <section>
-<div class="bg-brand-primary-dark">
-
-  <div class="container-fluid py-4">
-    <div class="row">
-      <div class="col p-4 text-center">
-        <button type="button" class="btn btn-outline-light btn-lg rounded-0 bg-brand-primary-dark"><h2 class="display-4">LOCATIONS</h2> </button>
-      </div>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-sm-10 col-md-8 p-4 text-center">
-        <amp-fit-text
-        class="text-center" width="350" height="100" layout="responsive">
-        Come visit us at any of our convenient locations throughout Austin TX and the surrounding metropolitan area.
-    </amp-fit-text>
-      </div>
-
-    </div>
-    </div>
-  </div>
-
-  </section>
-
-<!-- Locations Section -->
 <section>
-  <div class="bg-brand-secondary-dark">
+  <div class="bg-brand-primary-dark">
+
     <div class="container-fluid py-4">
       <div class="row">
         <div class="col p-4 text-center">
-          <button type="button" class="btn btn-outline-light btn-lg rounded-0 bg-brand-secondary-dark"><h2 class="display-4">COME VISIT</h2></button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-4 text-center">
-          <amp-img src="/assets/images/hero-dentist-chair.jpg"
-          width="300"
-          height="200"
-          layout="responsive"
-          animate-in="fade-in"
-          animate-in-duration=".5s"
-          alt="and another sample image"></amp-img>
-          <div>
-            <div class="text-center p-4">
-              <h3>Anderson LN</h3>
-              <div class="border-top my-0"></div>
-              <div>2700 Anderson LN #418</div>
-              <div>Austin, TX 78757</div>
-              <div>512.334.9894</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-4 text-center">
-          <amp-img src="/assets/images/hero-wood-owl.jpg"
-          width="300"
-          height="200"
-          layout="responsive"
-          animate-in="fade-in"
-          animate-in-duration=".5s"
-          alt="and another sample image"></amp-img>
-          <div>
-            <div class="text-center p-4">
-              <h3>Research BLVD</h3>
-              <div class="border-top my-0"></div>
-              <div>10721 Research BLVD B180</div>
-              <div>Austin, TX 78759</div>
-              <div>512.358.4979</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-md-4 text-center">
-          <amp-img src="/assets/images/hero-waitingroom.jpg"
-          width="300"
-          height="200"
-          layout="responsive"
-          animate-in="fade-in"
-          animate-in-duration=".5s"
-          alt="and another sample image"></amp-img>
-          <div>
-            <div class="text-center p-4">
-              <h3>Gattis School RD</h3>
-              <div class="border-top my-0"></div>
-              <div>2681 Gattis School RD #270</div>
-              <div>Round Rock, TX 78664</div>
-              <div>512.494.4459</div>
-            </div>
-          </div>
+          <button type="button" class="btn btn-outline-light btn-lg rounded-0 bg-brand-primary-dark">
+            <h2 class="display-4">LOCATIONS</h2>
+          </button>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-4 p-4 mt-4 text-center">
-            <h4>
-
-              Hours (all location)
-            </h4>
-            <div class="border-top my-0"></div>
-            <div>Mon (8:30am - 5:30pm)</div>
-            <div>Tue (7:30am - 7:30pm)</div>
-            <div>Wed (7:30am - 7:30pm)</div>
-            <div>Thu (7:30am - 7:30pm)</div>
-            <div>Fri (8:30am - 5:30pm)</div>
-            <div>Sat (9am -2pm)</div>
+        <div class="col-sm-10 col-md-8 p-4 text-center">
+          <amp-fit-text class="text-center" width="350" height="100" layout="responsive">
+            Come visit us at any of our convenient locations throughout Austin TX and the surrounding metropolitan area.
+          </amp-fit-text>
         </div>
+
       </div>
-
-
     </div>
-
   </div>
 
-  </section>
+</section>
 
-  <section>
-    <div class="bg-brand-primary-dark">
+<!-- Locations Section -->
+<section class="bg-brand-secondary-dark">
+  <div class="row">
+    <div class="col p-4 text-center">
+      <button type="button" class="btn btn-outline-light btn-lg rounded-0 bg-brand-secondary-dark">
+        <h2 class="display-4">COME VISIT</h2>
+      </button>
+    </div>
+  </div>
+  {% include locations.html %}
+</section>
 
-      <div class="container-fluid py-4">
-        <div class="row">
-          <div class="col p-4 text-center">
-            <amp-iframe width="600" height="450"
-            sandbox="allow-scripts allow-same-origin"
-            layout="responsive"
+<!-- <section>
+  <div class="bg-brand-primary-dark">
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col p-4 text-center">
+          <amp-iframe width="600" height="450" sandbox="allow-scripts allow-same-origin" layout="responsive"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.7002961432327!2d-97.73658518452706!3d30.35946641057617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cba5af6dfaab%3A0xc66ea7ebbf4a093a!2sForest%20Family%20Dentistry!5e0!3m2!1sen!2sus!4v1576891492870!5m2!1sen!2sus">
-        </amp-iframe>
-          </div>
-        </div>
-
+          </amp-iframe>
         </div>
       </div>
 
-      </section>
-
-
-
-
-
+    </div>
+  </div>
+</section> -->
