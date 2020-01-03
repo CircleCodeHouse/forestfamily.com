@@ -1,7 +1,7 @@
 {% for _page in site.pages %}
-{% if _page.settings %} 
-{% assign settings = _page %} 
-{% endif %} 
+{% if _page.settings %}
+{% assign settings = _page %}
+{% endif %}
 {% endfor %}
 
 <!-- Mobile/Tablet Nav  -->
@@ -117,11 +117,11 @@
             <a class="navbar-logo flex-grow-1 d-flex align-items-center" href="/" aria-label="Logo">
               <!-- htmllint preset="none" -->
               <amp-img
-                width="50"
-                height="50"
+                width="55"
+                height="53"
                 layout="fixed"
                 alt="{{ settings.name }} Home"
-                src="{{ settings.logo }}"
+                src="/{{ settings.logo }}"
               ></amp-img>
               <!-- htmllint preset="$previous" -->
               <span class="sr-only">{{ settings.site_name }} Logo</span>
@@ -129,7 +129,7 @@
             </a>
             <!-- End Logo -->
           </div>
-        
+
 
           <!-- Responsive Toggle Button -->
           <div class="d-flex flex-grow-0 align-items-center">
@@ -153,7 +153,7 @@
         >
           <ul class="navbar-nav u-header__navbar-nav ml-auto align-items-center">
             <li class="nav-item u-header__nav-item ml-lg-3 ml-xl-4">
-              <a class="p-0" href="/about.html">
+              <a class="p-0" href="/about/">
                 <span
                   class="text-dark hover-brand-primary-dark d-flex flex-column text-center align-items-center"
                 >
@@ -163,7 +163,7 @@
             </li>
 
             <li class="nav-item u-header__nav-item ml-lg-3 ml-xl-4">
-              <a class="p-0" href="/locations.html">
+              <a class="p-0" href="/locations/">
                 <span
                   class="text-dark hover-brand-primary-dark d-flex flex-column text-center align-items-center"
                 >
@@ -173,7 +173,7 @@
             </li>
 
             <li class="nav-item u-header__nav-item ml-lg-3 ml-xl-4">
-              <a class="p-0" href="/team.html">
+              <a class="p-0" href="/team/">
                 <span
                   class="text-dark hover-brand-primary-dark d-flex flex-column text-center align-items-center"
                 >
@@ -182,7 +182,7 @@
               </a>
             </li>
             <li class="nav-item u-header__nav-item ml-lg-3 ml-xl-4">
-              <a class=" hover-brand-primary-dark" href="/invisalign.html">
+              <a class=" hover-brand-primary-dark" href="/invisalign/">
                 <span
                   class="text-dark hover-brand-primary-dark d-flex flex-column text-center align-items-center"
                   >INVISALIGN</span
@@ -190,7 +190,7 @@
               </a>
             </li>
             <li class="nav-item u-header__nav-item ml-lg-3 ml-xl-4">
-              <a class=" hover-brand-primary-dark" href="/patients.html">
+              <a class=" hover-brand-primary-dark" href="/patients/">
                 <span
                   class="text-dark hover-brand-primary-dark d-flex flex-column text-center align-items-center"
                   >PATIENTS</span
@@ -199,7 +199,7 @@
             </li>
             <li class="nav-item u-header__nav-item ml-lg-3 ml-xl-4">
               <!-- htmllint preset="none" -->
-              <a class=" hover-brand-primary-dark" href="/services.html">
+              <a class=" hover-brand-primary-dark" href="/services/">
                 <!-- htmllint preset="$previous" -->
                 <span
                   class="text-dark hover-brand-primary-dark d-flex flex-column text-center align-items-center"
@@ -209,7 +209,7 @@
             </li>
             <li class="nav-item u-header__nav-item ml-lg-3 ml-xl-4 bg-brand-secondary-dark p-3">
               <!-- htmllint preset="none" -->
-              <a class="hover-brand-primary-dark" href="/appointment.html">
+              <a class=" hover-brand-primary-dark" href="/appointment/">
                 <!-- htmllint preset="$previous" -->
                 <span
                   class="text-dark hover-brand-primary-dark d-flex flex-column text-center align-items-center"
