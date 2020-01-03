@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: '/patients'
+permalink: '/patients/'
 title: patients
 head_title: ''
 description: ''
@@ -9,11 +9,11 @@ amp_components:
 ---
 
 {% for _page in site.pages %}
-{% if _page.settings %} 
-{% assign settings = _page %} 
-{% endif %} 
+{% if _page.settings %}
+{% assign settings = _page %}
+{% endif %}
 {% endfor %}
-  
+
 <!-- Our Team Section -->
   <section>
 <div class="bg-brand-primary-dark">
@@ -27,7 +27,7 @@ amp_components:
 
     <div class="row justify-content-center">
       <div class="col-sm-10 col-md-8 p-4 text-center">
-        <amp-fit-text 
+        <amp-fit-text
         class="text-center" width="350" height="100" layout="responsive">
         Easy Access to Dental Insurance, Membership Plans, Patient Forms, Appoints, and more!
     </amp-fit-text>
@@ -54,7 +54,7 @@ amp_components:
       <div class="row justify-content-center">
         <div class="col-sm-3 col-md-3 p-sm-2 p-md-5 text-center">
           <a href="#">
-          <amp-img src="assets/images/patients-tooth.webp"
+          <amp-img src="/assets/images/patients-tooth.png"
           width="150"
           height="150"
           layout="fixed"
@@ -68,10 +68,10 @@ amp_components:
           </div>
         </a>
         </div>
-  
+
         <div class="col-sm-3 col-md-3 p-sm-2 p-md-5 text-center">
           <a href="#">
-            <amp-img src="assets/images/patients-form.webp"
+            <amp-img src="/assets/images/patients-form.png"
             width="150"
             height="150"
             layout="fixed"
@@ -86,11 +86,11 @@ amp_components:
           </a>
         </div>
       </div>
-  
+
       <div class="row justify-content-center">
         <div class="col-sm-3 col-md-3 p-sm-2 p-md-5 text-center">
           <a href="#">
-            <amp-img src="assets/images/patients-calendar.webp"
+            <amp-img src="/assets/images/patients-calendar.png"
             width="150"
             height="150"
             layout="fixed"
@@ -107,7 +107,7 @@ amp_components:
 
         <div class="col-sm-3 col-md-3 p-sm-2 p-md-5 text-center">
           <a href="#">
-            <amp-img src="assets/images/patients-accounts.webp"
+            <amp-img src="/assets/images/patients-accounts.png"
             width="150"
             height="150"
             layout="fixed"
@@ -124,7 +124,7 @@ amp_components:
       </div>
     </div>
   </div>
-  
+
   </section>
 
 
