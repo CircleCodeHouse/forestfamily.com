@@ -17,18 +17,30 @@ fields:
 - type: file
   name: seal
   label: seal
-- type: text
-  name: primary_light_color
+- name: primary_light_color
+  type: color
   label: primary_light_color
-- type: text
-  name: primary_dark_color
+  config:
+    required: false
+    color_format: RGB
+- name: primary_dark_color
+  type: color
   label: primary_dark_color
-- type: text
-  name: secondary_light_color
+  config:
+    required: false
+    color_format: RGB
+- name: secondary_light_color
+  type: color
   label: secondary_light_color
-- type: text
-  name: secondary_dark_color
+  config:
+    required: false
+    color_format: RGB
+- name: secondary_dark_color
+  type: color
   label: secondary_dark_color
+  config:
+    required: false
+    color_format: RGB
 - type: text
   name: google_tag_manager
   label: google_tag_manager
