@@ -43,50 +43,366 @@ amp_components:
   </div>
 
 </amp-carousel>
-
-<!-- Reserve Appointment Section -->
+  
+<!-- Reserve Appointment Form Section -->
 <section>
   <div class="bg-brand-primary-dark">
-
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col p-4 text-center">
-          <button type="button" class="btn btn-outline-light btn-lg rounded-0 bg-brand-primary-dark"><h2 class="display-4">APPOINTMENT REQUEST</h2> </button>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-sm-10 col-md-5 p-4 text-center">
-          <form class="sample-form"
-          method="GET"
-          action="/documentation/examples/api/submit-form"
-          target="_top">
-          <input type="search"
-            placeholder="Search..."
-            name="search">
-          <input type="submit"
-            value="OK">
-        </form>
-        </div>
-
-        <div class="col-sm-10 col-md-5 p-4 text-center">
-          <form class="sample-form"
-          method="GET"
-          action="/documentation/examples/api/submit-form"
-          target="_top">
-          <input type="search"
-            placeholder="Search..."
-            name="search">
-          <input type="submit"
-            value="OK">
-        </form>
-
-        </div>
-
-      </div>
+  
+      <div class="container-fluid p-4 pb-4">
+      <div class="row pb-4">
+      <div class="col p-4 text-center">
+        <button type="button" class="btn btn-outline-light btn-lg rounded-0 bg-brand-primary-dark"><h2 class="display-4">APPOINTMENT REQUEST</h2> </button>
       </div>
     </div>
+  
+      <form
+      method="post"
+      action-xhr="/documentation/examples/api/submit-form-xhr"
+      target="_top">
+      
+      <div class="row justify-content-center pb-4">
 
+<!-- LEFT COLUMN (LOCATION) -->
+        <div class="col-sm-5">
+          <h3>Preferred FFD location</h3>
+          
+          <div class="row">
+            <div class="col-sm-10">
+              <input type="radio"
+              id="anderson"
+              name="location"
+              value="anderson">
+              <label for="anderson">Anderson LN (Austin)</label>
+            </div>
+            
+            <div class="col-sm-10">
+              <input type="radio"
+              id="burnet"
+              name="location"
+              value="burnet">
+              <label for="burnet">Burnet Rd (Austin)</label>
+            </div>
+
+            <div class="col-sm-10">
+              <input type="radio"
+              id="research"
+              name="location"
+              value="research">
+              <label for="research">Research BLVD (Austin)</label>
+            </div>
+
+            <div class="col-sm-10">
+              <input type="radio"
+              id="gattis"
+              name="location"
+              value="gattis">
+              <label for="gattis">Gattis School Rd (Round Rock)</label>
+            </div>
+
+          </div>
+        </div>
+
+<!-- RIGHT COLUMN (NEW PATIENT) -->
+        <div class="col-sm-5">
+          <h3>Are you a NEW patient to FFD?</h3>
+          
+          <div class="row">
+            <div class="col-sm-10">
+              <input type="radio"
+              id="yes"
+              name="patient"
+              value="yes">
+              <label for="yes">Yes</label>
+            </div>
+            
+            <div class="col-sm-10">
+              <input type="radio"
+              id="no"
+              name="patient"
+              value="no">
+              <label for="no">No</label>
+            </div>
+
+        
+        </div>
+      </div>
+      </div>
+
+<!-- NAME ADDRESS DOB PHONE -->
+<div class="row justify-content-center p-2 pb-4">
+
+      <div class="col-sm-10 col-md-5 p-2">
+        <input type="text"
+        name="first"
+        placeholder="First Name..."
+        size="30"
+        required>
+      </div>
+      
+      <div class="col-sm-10 col-md-5 p-2">
+        <input type="text"
+        name="last"
+        placeholder="Last Name..."
+        size="30"
+        required>
+      </div>
+
+      <div class="col-sm-10 p-2">
+        <input type="email"
+        name="email"
+        placeholder="Email Address..."
+        size="40"
+        required>
+      </div>
+
+      <div class="col-sm-10 col-md-5 p-2">
+        <input type="date"
+        name="select-date"
+        value="1985-11-05"
+        required>
+      </div>
+
+      <div class="col-sm-10 col-md-5 p-2">
+        <input type="tel"
+        name="tel"
+        placeholder="Phone Number..."
+        required>
+      </div>
+
+</div>
+
+<!-- APPOINTMENT DAYS / TIMES -->
+
+<div class="row justify-content-center pb-4">
+
+  <!-- LEFT COLUMN (DAYS) -->
+          <div class="col-sm-5">
+            <h3>Most convenient day(s) for your appointment:</h3>
+            
+            <div class="row">
+              <div class="col-sm-10">
+                <input type="checkbox"
+                id="day1"
+                name="day1"
+                value="monday">
+              <label for="day1">Monday</label>
+              </div>
+              
+              <div class="col-sm-10">
+                <input type="checkbox"
+                id="day2"
+                name="day2"
+                value="tuesday">
+              <label for="day2">Tuesday</label>
+              </div>
+  
+              <div class="col-sm-10">
+                <input type="checkbox"
+                id="day3"
+                name="day3"
+                value="wednesday">
+              <label for="day3">Wednesday</label>
+              </div>
+  
+              <div class="col-sm-10">
+                <input type="checkbox"
+                id="day4"
+                name="day4"
+                value="thursday">
+              <label for="day4">Thursday</label>
+              </div>
+
+              <div class="col-sm-10">
+                <input type="checkbox"
+                id="day5"
+                name="day5"
+                value="friday">
+              <label for="day5">Friday</label>
+              </div>
+
+              <div class="col-sm-10">
+                <input type="checkbox"
+                id="day6"
+                name="day6"
+                value="saturday">
+              <label for="day6">Saturday</label>
+              </div>
+  
+            </div>
+          </div>
+  
+  <!-- RIGHT COLUMN (TIMES) -->
+          <div class="col-sm-5">
+            <h3>Most convenient time(s) for your appointment:</h3>
+            
+            <div class="row">
+              <div class="col-sm-10">
+                <input type="checkbox"
+                id="time1"
+                name="time1"
+                value="timeone">
+              <label for="time1">7:30am - 9:30am</label>
+              </div>
+              
+              <div class="col-sm-10">
+                <input type="checkbox"
+                id="time2"
+                name="time2"
+                value="timetwo">
+              <label for="time2">9:30am - noon</label>
+              </div>
+  
+              <div class="col-sm-10">
+                <input type="checkbox"
+                id="time3"
+                name="time3"
+                value="timethree">
+              <label for="time3">noon - 3pm
+              </label>
+              </div>
+  
+              <div class="col-sm-10">
+                <input type="checkbox"
+                id="time4"
+                name="time4"
+                value="timefour">
+              <label for="time4">3pm - 6pm</label>
+              </div>
+
+              <div class="col-sm-10">
+                <input type="checkbox"
+                id="time5"
+                name="time5"
+                value="timefive">
+              <label for="time5">after 6pm</label>
+              </div>
+  
+            </div>
+        </div>
+        </div>
+
+<!-- REASON FOR APPOINTMENT -->
+
+<div class="row justify-content-center">
+<div class="col-md-10">
+  <h3>Reason for your appointment:</h3>
+</div>
+</div>
+
+<div class="row justify-content-center">
+<div class="col-sm-3">
+  <input type="radio"
+  id="cleaning"
+  name="reason"
+  value="cleaning">
+  <label for="cleaning">Cleaning & Exam</label>
+</div>
+
+<div class="col-sm-2">
+  <input type="radio"
+  id="pain"
+  name="reason"
+  value="pain">
+  <label for="pain">In Pain</label>
+</div>
+
+<div class="col-sm-3">
+  <input type="radio"
+  id="invisalign"
+  name="reason"
+  value="invisalign">
+  <label for="invisalign">Invisalign</label>
+</div>
+
+<div class="col-sm-2">
+  <input type="radio"
+  id="other"
+  name="reason"
+  value="other">
+  <label for="other">Other</label>
+</div>
+</div>
+
+<div class="row justify-content-center pb-4">
+  <div class="col-md-10">
+    <input type="text"
+    name="name"
+    placeholder="If other, please explain..."
+    size="50"
+    required>
+  </div>
+</div>
+
+<!-- FFD MEMBERSHIP / PPO INSURANCE -->
+
+<div class="row justify-content-center pb-4 pt-4">
+
+  <!-- LEFT COLUMN (FFD MEMBERSHIP) -->
+  <div class="col-sm-5">
+    <h3>Do you have an FFD membership plan?</h3>
+    
+    <div class="row">
+      <div class="col-sm-10">
+        <input type="radio"
+        id="yes"
+        name="membership"
+        value="yes">
+        <label for="yes">Yes</label>
+      </div>
+      
+      <div class="col-sm-10">
+        <input type="radio"
+        id="no"
+        name="membership"
+        value="no">
+        <label for="no">No</label>
+      </div>
+
+  
+  </div>
+</div>
+  
+  <!-- RIGHT COLUMN (PPO INSURANCE) -->
+          <div class="col-sm-5">
+            <h3>Do you have a Dental PPO insurance plan?</h3>
+            
+            <div class="row">
+              <div class="col-sm-10">
+                <input type="radio"
+                id="yes"
+                name="dental"
+                value="yes">
+                <label for="yes">Yes</label>
+              </div>
+              
+              <div class="col-sm-10">
+                <input type="radio"
+                id="no"
+                name="dental"
+                value="no">
+                <label for="no">No</label>
+              </div>
+  
+          
+          </div>
+        </div>
+        </div>
+
+        <div class="row justify-content-center pb-4">
+          <div class="col-sm-10">
+            <input type="submit"
+            value="Subscribe">
+          </div>
+        </div>
+
+
+</form>
+</div>
+<!-- END FORM -->
+
+
+
+  
     </section>
 
 

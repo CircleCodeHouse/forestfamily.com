@@ -19,6 +19,7 @@
   {% capture favicon %}{% file_exists _includes/favicon.html %}{% endcapture %}
   {% if favicon == "true" %}{% include favicon.html %}{% endif %}
   <!-- htmllint preset="none" -->
+  <link href="https://fonts.googleapis.com/css?family=Gravitas+One&display=swap" rel="stylesheet">
   <style amp-custom>
     :root {
       --brand-primary-light: {{ settings.primary_light_color | replace: 'rgb(', '' | replace: ')', '' }};
