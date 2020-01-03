@@ -71,11 +71,13 @@
 <header id="header" class="u-header--navbar-bg bg-brand-primary-light w-100 flex-wrap shadow-sm">
   <div class="u-header__section bg-primary-dark">
     <!-- htmllint preset="$previous" -->
-    <div class="container-fluid px-md-0 px-lg-1">
+    <div class="container px-md-0 px-lg-0">
       <!-- Nav -->
-      <nav class="navbar navbar-expand-lg u-header__navbar u-header__navbar--no-space flex-row flex-wrap container">
-        <div class="flex-grow-1 d-flex justify-content-between">
-          <div class="flex-grow-1">
+      <nav
+        class="navbar navbar-expand-lg u-header__navbar u-header__navbar--no-space flex-row flex-wrap container justify-content-center"
+      >
+        <div class="flex-grow-1 d-flex justify-content-center">
+          <div class="flex-grow-1 align-items-center">
             <!-- Logo -->
             <a class="navbar-logo flex-grow-1 d-flex align-items-center" href="/" aria-label="Logo">
               <!-- htmllint preset="none" -->
@@ -83,7 +85,7 @@
               </amp-img>
               <!-- htmllint preset="$previous" -->
               <span class="sr-only">{{ settings.site_name }} Logo</span>
-              <h2>{{ settings.site_name }}</h2>
+              <h1 class="text-dark font-family-alt">{{ settings.site_name }}</h1>
             </a>
             <!-- End Logo -->
           </div>
@@ -100,8 +102,11 @@
           <!-- End Responsive Toggle Button -->
         </div>
         <!-- Navigation -->
-        <div id="nav-bar" class="collapse navbar-collapse u-header__navbar-collapse d-none d-lg-flex flex-grow-0">
-          <ul class="navbar-nav u-header__navbar-nav ml-auto">
+        <div
+          id="nav-bar"
+          class="collapse navbar-collapse u-header__navbar-collapse d-none d-lg-flex flex-grow-0"
+        >
+          <ul class="navbar-nav u-header__navbar-nav ml-auto align-items-center">
             <li class="nav-item u-header__nav-item ml-lg-3 ml-xl-4">
               <a class="p-0" href="/about/">
                 <span class="text-dark hover-brand-primary-dark d-flex flex-column text-center align-items-center">
@@ -145,7 +150,7 @@
                   class="text-dark hover-brand-primary-dark d-flex flex-column text-center align-items-center">SERVICES</span>
               </a>
             </li>
-            <li class="nav-item u-header__nav-item ml-lg-3 ml-xl-4">
+            <li class="nav-item u-header__nav-item ml-lg-3 ml-xl-4 bg-brand-secondary-dark p-3">
               <!-- htmllint preset="none" -->
               <a class=" hover-brand-primary-dark" href="/appointment/">
                 <!-- htmllint preset="$previous" -->
