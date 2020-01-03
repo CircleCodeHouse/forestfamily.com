@@ -1,0 +1,124 @@
+---
+label: Settings
+hide_body: true
+fields:
+- type: boolean
+  name: settings
+  label: settings
+- type: text
+  name: head_title
+  label: head_title
+- type: text
+  name: site_name
+  label: site_name
+- type: file
+  name: logo
+  label: logo
+- type: file
+  name: seal
+  label: seal
+- type: text
+  name: primary_light_color
+  label: primary_light_color
+- type: text
+  name: primary_dark_color
+  label: primary_dark_color
+- type: text
+  name: secondary_light_color
+  label: secondary_light_color
+- type: text
+  name: secondary_dark_color
+  label: secondary_dark_color
+- type: text
+  name: google_tag_manager
+  label: google_tag_manager
+- type: text
+  name: google_tag_manager_amp
+  label: google_tag_manager_amp
+- type: text
+  name: facebook
+  label: facebook
+- type: text
+  name: instagram
+  label: instagram
+- type: text
+  name: youtube
+  label: youtube
+- type: text
+  name: url
+  label: url
+- type: textarea
+  name: hours
+  label: hours
+- type: field_group_list
+  name: locations
+  label: locations
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: street
+    label: street
+  - type: text
+    name: city
+    label: city
+  - type: text
+    name: state
+    label: state
+  - type: number
+    name: postal
+    label: postal
+  - type: text
+    name: url
+    label: url
+  - type: text
+    name: phone
+    label: phone
+  - type: file
+    name: image
+    label: image
+- type: field_group_list
+  name: team
+  label: team
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: location
+    label: location
+  - type: text
+    name: email
+    label: email
+  - type: file
+    name: photo
+    label: photo
+- type: field_group_list
+  name: invisaligns
+  label: invisaligns
+  fields:
+  - type: text
+    name: permalink
+    label: permalink
+  - type: text
+    name: name
+    label: name
+  - type: file
+    name: photo
+    label: photo
+  - type: text
+    name: description
+    label: description
+  - type: image_gallery
+    name: before_images
+    label: before_images
+  - type: image_gallery
+    name: after_images
+    label: after_images
+- type: text
+  name: footer_text
+  label: footer_text
+- type: text
+  name: announcement
+  label: announcement
