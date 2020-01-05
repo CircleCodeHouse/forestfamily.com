@@ -1,6 +1,6 @@
 ---
 layout: page
-name: Third Molar Extractions
+title: Third Molar Extractions
 permalink: "/thirdmolarextractions/"
 
 ---

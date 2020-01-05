@@ -1,6 +1,6 @@
 ---
 layout: page
-name: Fillings
+title: Fillings
 permalink: "/fillings/"
 
 ---
