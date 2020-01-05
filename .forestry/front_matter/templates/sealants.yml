@@ -21,4 +21,5 @@ fields:
   default: page
   hidden: true
 pages:
+- fillings.md
 - sealants.md
