@@ -2,13 +2,6 @@
 label: Page
 hide_body: false
 fields:
-- name: layout
-  type: text
-  config:
-    required: false
-  label: layout
-  default: page
-  hidden: true
 - name: name
   type: text
   config:
@@ -19,5 +12,12 @@ fields:
   config:
     required: false
   label: permalink
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  default: page
+  hidden: true
 pages:
 - sealants.md
