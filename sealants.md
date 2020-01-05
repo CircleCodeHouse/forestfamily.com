@@ -1,8 +1,7 @@
 ---
+name: Sealants
 layout: page
 permalink: "/sealants/"
-name: Sealants
-
 ---
 # Sealants
 
