@@ -9,6 +9,11 @@ fields:
   label: layout
   default: page
   hidden: true
+- name: name
+  type: text
+  config:
+    required: false
+  label: name
 - name: permalink
   type: text
   config:
