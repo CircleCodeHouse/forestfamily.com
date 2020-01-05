@@ -106,28 +106,6 @@ fields:
   - type: file
     name: photo
     label: photo
-- type: field_group_list
-  name: invisaligns
-  label: invisaligns
-  fields:
-  - type: text
-    name: permalink
-    label: permalink
-  - type: text
-    name: name
-    label: name
-  - type: file
-    name: photo
-    label: photo
-  - type: text
-    name: description
-    label: description
-  - type: image_gallery
-    name: before_images
-    label: before_images
-  - type: image_gallery
-    name: after_images
-    label: after_images
 - type: text
   name: footer_text
   label: footer_text
