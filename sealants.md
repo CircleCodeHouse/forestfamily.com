@@ -8,23 +8,12 @@ name: Sealants
 
 Our Forest Family Dentists encourage dental sealants for 3 reasons:
 
-​
-
 1. They are proven to prevent decay.
+2. They are easy and painless to place.
+3. They are more affordable than fixing the damage caused by tooth decay, and require few resources to place.
 
-​
-
-1. They are easy and painless to place.
-
-​
-
-1. They are more affordable than fixing the damage caused by tooth decay, and require few resources to place.
-
-​
 
 Also, patients love them!
-
-​
 
 This is what they look like on top of molars:
 
