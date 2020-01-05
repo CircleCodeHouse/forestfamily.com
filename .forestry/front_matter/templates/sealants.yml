@@ -22,4 +22,5 @@ fields:
   hidden: true
 pages:
 - fillings.md
+- implants.md
 - sealants.md
