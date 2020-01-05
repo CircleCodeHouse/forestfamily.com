@@ -42,3 +42,5 @@ fields:
   - type: image_gallery
     name: after_images
     label: after_images
+pages:
+- invisalign.html
