@@ -2,9 +2,15 @@
 label: Settings
 hide_body: true
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
 - type: boolean
   name: settings
   label: settings
+  hidden: true
 - type: text
   name: head_title
   label: head_title
