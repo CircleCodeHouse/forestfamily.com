@@ -3,11 +3,11 @@ const { readFileSync, writeFileSync, existsSync, mkdirSync } = require('fs')
 
 const createInvisaligns = () => {
   if (!existsSync('./invisalign')) mkdirSync('./invisalign');
-  const invisaligns = fm(readFileSync('./settings.html', 'utf-8')).attributes.invisaligns;
-  invisaligns.filter(invisalign => invisalign.permalink).forEach(invisalign => {
-      writeFileSync(`./invisalign/${invisalign.permalink.split('/').filter(i => i).join('-')}.md`, `---
+  const patients = fm(readFileSync('./invisalign.html', 'utf-8')).attributes.patients;
+  patients.filter(patient => patient.permalink).forEach(patient => {
+      writeFileSync(`./invisalign/${patient.permalink.split('/').filter(i => i).join('-')}.md`, `---
 layout: invisalign
-permalink: ${invisalign.permalink}
+permalink: ${patient.permalink}
 ---`)
   })
 }

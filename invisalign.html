@@ -7,6 +7,17 @@ description: ''
 amp_components:
   - amp-carousel
   - amp-fit-text
+patients:
+- permalink: "/invisalign/brittani/"
+  name: Brittani
+  photo: assets/uploads/invisalign-Brittani.png
+  description: 12 trays, 24 weeks
+  before_images:
+  - assets/uploads/brittani-before-1.jpg
+  - assets/uploads/brittani-before-2.jpg
+  after_images:
+  - assets/uploads/brittani-after-1.jpg
+  - assets/uploads/brittani-after-2.jpg
 ---
 
 {% for _page in site.pages %}
@@ -118,123 +129,27 @@ We utilize iTero technology at all 3 locations, meaning extremely accurate scans
   </section>
 
 <!-- Before & After Section -->
-<section>
-  <div class="bg-brand-secondary-dark pb-4">
-    <div class="container-fluid py-4">
-      <div class="row">
-        <div class="col p-4 text-center">
-          <button type="button" class="btn btn-outline-light btn-lg rounded-0 bg-brand-secondary-dark"><h2 class="display-4">BEFORE & AFTER</h2></button>
-        </div>
-      </div>
-    </div>
-
-      <div class="row no-gutters justify-content-center">
-        <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
-          <amp-img src="/assets/uploads/invisalign-Brittani.png"
-
-          width="50"
-          height="55"
-          layout="responsive"
-          animate-in="fade-in"
-          animate-in-duration=".5s"
-          alt="and another sample image"></amp-img>
-        </div>
-
-        <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
-          <amp-img src="/assets/uploads/invisalign-Gage.png"
-
-          width="50"
-          height="55"
-          layout="responsive"
-          animate-in="fade-in"
-          animate-in-duration=".5s"
-          alt="and another sample image"></amp-img>
-        </div>
-
-        <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
-            <amp-img src="/assets/uploads/invisalign-Lilian.png"
-
-            width="50"
-            height="55"
-            layout="responsive"
-            animate-in="fade-in"
-            animate-in-duration=".5s"
-            alt="and another sample image"></amp-img>
-        </div>
-      </div>
-
-      <div class="row no-gutters justify-content-center">
-        <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
-          <amp-img src="/assets/uploads/invisalign-Jane.png"
-
-          width="50"
-          height="55"
-          layout="responsive"
-          animate-in="fade-in"
-          animate-in-duration=".5s"
-          alt="and another sample image"></amp-img>
-        </div>
-
-        <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
-          <amp-img src="/assets/uploads/invisalign-Janan.png"
-
-          width="50"
-          height="55"
-          layout="responsive"
-          animate-in="fade-in"
-          animate-in-duration=".5s"
-          alt="and another sample image"></amp-img>
-        </div>
-
-        <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
-            <amp-img src="/assets/uploads/invisalign-Evan.png"
-
-            width="50"
-            height="55"
-            layout="responsive"
-            animate-in="fade-in"
-            animate-in-duration=".5s"
-            alt="and another sample image"></amp-img>
-        </div>
-      </div>
-
-      <div class="row no-gutters justify-content-center">
-        <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
-          <amp-img src="/assets/uploads/invisalign-Lisa.png"
-
-          width="55"
-          height="60"
-          layout="responsive"
-          animate-in="fade-in"
-          animate-in-duration=".5s"
-          alt="and another sample image"></amp-img>
-        </div>
-
-        <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
-          <amp-img src="/assets/uploads/invisalign-Melissa.png"
-
-          width="55"
-          height="60"
-          layout="responsive"
-          animate-in="fade-in"
-          animate-in-duration=".5s"
-          alt="and another sample image"></amp-img>
-        </div>
-
-        <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
-            <amp-img src="/assets/uploads/invisalign-Jeri.png"
-
-            width="55"
-            height="60"
-            layout="responsive"
-            animate-in="fade-in"
-            animate-in-duration=".5s"
-            alt="and another sample image"></amp-img>
-        </div>
-      </div>
+<section class="bg-brand-secondary-dark pb-4">
+  <div class="d-flex justify-content-center">
+    <h1 class="display-4 border border-white p-2 mb-4">BEFORE &amp; AFTER</h1>
   </div>
 
-  </section>
+  <div class="row no-gutters justify-content-center">
+    {% for patient in page.patients %}
+      <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
+        <a href="{{ patient.permalink }}">
+          <amp-img src="/{{ patient.photo }}"
+            width="50"
+            height="55"
+            layout="responsive"
+            animate-in="fade-in"
+            animate-in-duration=".5s"
+            alt="{{ patient.name }}"></amp-img>
+          </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
 
 
 
