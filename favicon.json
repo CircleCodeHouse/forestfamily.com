@@ -6,7 +6,7 @@
   {% endif %}
 {% endfor %}
 {
-  "masterPicture": ".{{ settings.seal }}",
+  "masterPicture": "./{{ settings.seal }}",
   "iconsPath": "/assets/favicons/",
   "design": {
     "ios": {
