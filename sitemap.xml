@@ -16,6 +16,9 @@
     <loc>https://www.forestfamily.com/patients</loc>
   </url>
   <url>
+    <loc>https://www.forestfamily.com/appointments</loc>
+  </url>
+  <url>
     <loc>https://www.forestfamily.com/drbethell</loc>
   </url>
   <url>
@@ -23,9 +26,6 @@
   </url>
   <url>
     <loc>https://www.forestfamily.com/drdisla</loc>
-  </url>
-  <url>
-    <loc>https://www.forestfamily.com/appointments</loc>
   </url>
   <url>
     <loc>https://www.forestfamily.com/insurance</loc>
@@ -49,12 +49,12 @@
     <loc>https://www.forestfamily.com/forms-gattis</loc>
   </url>
   <url>
+    <loc>https://www.forestfamily.com/spanish-forms-main</loc>
+  </url>
+  <url>
     <loc>https://www.forestfamily.com/spanish-forms-north</loc>
   </url>
   <url>
     <loc>https://www.forestfamily.com/spanish-forms-rr</loc>
-  </url>
-  <url>
-    <loc>https://www.forestfamily.com/spanish-forms-main</loc>
   </url>
 </urlset>
