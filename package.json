@@ -6,9 +6,8 @@
   "private": true,
   "scripts": {
     "build": "yarn invisaligns && yarn css && yarn jekyll-build && yarn jekyll-build-amp && yarn optimize",
-    "cname": "echo $(echo $JEKYLL_ENV)forestfamily.com >> _site/CNAME",
     "css": "node _javascripts/postcss.js && cat assets/css/main.min.css > _includes/css.html",
-    "deploy": "yarn cname && gh-pages --repo git@github.com:CircleCodeHouse/$(echo $JEKYLL_ENV)forestfamily.com.git -d ./_site -t",
+    "deploy": "gh-pages --repo git@github.com:CircleCodeHouse/$(echo $JEKYLL_ENV)forestfamily.com.git -d ./_site -t",
     "encrypt": "set -e && find ./_site -type f -name '*.html' -exec staticrypt -f _javascripts/password_template.html {} $PASSWORD -o {} \\;",
     "favicon": "real-favicon generate _site/favicon.json faviconData.json assets/favicons/ && yarn favicon-inject",
     "favicon-inject": "echo '' > _includes/favicon.html && real-favicon inject faviconData.json assets/favicons _includes/favicon.html && mv assets/favicons/favicon.html _includes/favicon.html",
