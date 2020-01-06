@@ -1,0 +1,27 @@
+---
+label: Page
+hide_body: false
+display_field: name
+fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: name
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: permalink
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  default: page
+  hidden: true
+pages:
+- fillings.md
+- implants.md
+- sealants.md
+- thirdmolarextractions.md

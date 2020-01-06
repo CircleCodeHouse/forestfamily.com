@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "build": "yarn css && yarn jekyll-build && yarn jekyll-build-amp && yarn optimize",
+    "build": "yarn invisaligns && yarn css && yarn jekyll-build && yarn jekyll-build-amp && yarn optimize",
     "cname": "echo $(echo $JEKYLL_ENV)$(echo $KEY) >> _site/CNAME",
     "css": "node _javascripts/postcss.js && cat assets/css/main.min.css > _includes/css.html",
     "deploy": "yarn cname && gh-pages --repo git@github.com:CircleCodeHouse/$(echo $JEKYLL_ENV)$(echo $KEY).git -d ./_site -t",
@@ -13,6 +13,7 @@
     "favicon": "real-favicon generate _site/favicon.json faviconData.json assets/favicons/ && yarn favicon-inject",
     "favicon-inject": "echo '' > _includes/favicon.html && real-favicon inject faviconData.json assets/favicons _includes/favicon.html && mv assets/favicons/favicon.html _includes/favicon.html",
     "html": "posthtml -c .posthtmlrc && sleep 4 && posthtml -c .posthtmlrc_2",
+    "invisaligns": "node _javascripts/invisaligns.js",
     "images": "imagemin assets/uploads/* --out-dir=assets/uploads/ && imagemin assets/uploads/* --out-dir=assets/uploads/ --plugin=webp",
     "jekyll-build": "bundle exec jekyll build --config _config.yml",
     "jekyll-build-amp": "bundle exec jekyll build --config _config.yml,_amp.yml --destination _site/amp/",
@@ -76,7 +77,8 @@
         "_site",
         "node_modules",
         "assets/css/main.min.css",
-        "_includes/css.html"
+        "_includes/css.html",
+        "invisalign"
       ]
     }
   }
