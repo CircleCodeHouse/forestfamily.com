@@ -4,7 +4,9 @@ layout: default
 {% for _page in site.pages %}
   {% if _page.settings %}
     {% assign settings = _page %}
-    {% for _invisalign in settings.invisaligns %}
+  {% endif %}
+  {% if _page.permalink == '/invisalign/' %}
+    {% for _invisalign in _page.patients %}
       {% if _invisalign.permalink == page.permalink %}
         {% assign invisalign = _invisalign %}
       {% endif %}
