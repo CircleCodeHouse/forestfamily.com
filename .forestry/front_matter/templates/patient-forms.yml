@@ -58,3 +58,5 @@ fields:
       - type: text
         name: link
         label: link
+pages:
+- patientforms.html
