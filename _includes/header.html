@@ -76,20 +76,16 @@
       <nav
         class="navbar navbar-expand-lg u-header__navbar u-header__navbar--no-space flex-row flex-wrap container justify-content-center"
       >
-        <div class="flex-grow-1 d-flex justify-content-center">
+        <div class="flex-grow-1 d-flex justify-content-around">
           <div class="flex-grow-1 align-items-center">
             <!-- Logo -->
             <a class="navbar-logo flex-grow-1 d-flex align-items-center" href="/" aria-label="Logo">
               <!-- htmllint preset="none" -->
-              <amp-img width="55" height="56" layout="fixed" alt="{{ settings.name }} Home" src="/{{ settings.logo }}">
+              <amp-img class="p-2" width="55" height="55" layout="fixed" alt="{{ settings.name }} Home" src="/{{ settings.logo }}">
               </amp-img>
               <!-- htmllint preset="$previous" -->
-              <span class="sr-only">{{ settings.site_name }} Logo</span>
-<<<<<<< HEAD
-              <h1 class="text-dark font-family-alt ">{{ settings.site_name }}</h1>
-=======
+              <span class="sr-only p-2">{{ settings.site_name }} Logo</span>
               <span class="h1 mb-0 ml-2 text-dark font-family-alt">{{ settings.site_name }}</span>
->>>>>>> eaebc4ac7f4927408f2ec8062f6443d0b107b4fe
             </a>
             <!-- End Logo -->
           </div>
@@ -154,7 +150,7 @@
                   class="text-dark hover-brand-primary-dark d-flex flex-column text-center align-items-center">SERVICES</span>
               </a>
             </li>
-            <li class="btn rounded-0 nav-item u-header__nav-item ml-lg-3 ml-xl-4 bg-brand-secondary-light p-3">
+            <li class="nav-item u-header__nav-item ml-lg-3 ml-xl-4 bg-brand-secondary-light p-3">
               <!-- htmllint preset="none" -->
               <a class=" hover-brand-primary-dark" href="/appointment/">
                 <!-- htmllint preset="$previous" -->

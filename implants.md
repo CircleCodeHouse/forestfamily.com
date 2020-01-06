@@ -1,6 +1,6 @@
 ---
 layout: page
-name: Implants
+title: Implants
 permalink: "/implants/"
 
 ---
