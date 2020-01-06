@@ -1,0 +1,60 @@
+---
+label: Patient Forms
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: title
+  label: title
+- type: text
+  name: head_title
+  label: head_title
+- type: text
+  name: description
+  label: description
+- type: list
+  name: amp_components
+  label: amp_components
+- type: field_group
+  name: form_groups
+  label: form_groups
+  fields:
+  - type: field_group_list
+    name: english
+    label: english
+    fields:
+    - type: text
+      name: group
+      label: group
+    - type: field_group_list
+      name: forms
+      label: forms
+      fields:
+      - type: text
+        name: name
+        label: name
+      - type: textarea
+        name: link
+        label: link
+  - type: field_group_list
+    name: spanish
+    label: spanish
+    fields:
+    - type: text
+      name: group
+      label: group
+    - type: field_group_list
+      name: forms
+      label: forms
+      fields:
+      - type: text
+        name: name
+        label: name
+      - type: text
+        name: link
+        label: link
