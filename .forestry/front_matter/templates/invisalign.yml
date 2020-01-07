@@ -42,5 +42,7 @@ fields:
   - type: image_gallery
     name: after_images
     label: after_images
+  config:
+    labelField: name
 pages:
 - invisalign.html
