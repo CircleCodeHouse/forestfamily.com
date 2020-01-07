@@ -19,10 +19,10 @@
     <loc>https://www.forestfamily.com/appointments</loc>
   </url>
   <url>
-    <loc>https://www.forestfamily.com/drwait</loc>
+    <loc>https://www.forestfamily.com/drbethell</loc>
   </url>
   <url>
-    <loc>https://www.forestfamily.com/drbethell</loc>
+    <loc>https://www.forestfamily.com/drwait</loc>
   </url>
   <url>
     <loc>https://www.forestfamily.com/drdisla</loc>
@@ -35,5 +35,26 @@
   </url>
   <url>
     <loc>https://www.forestfamily.com/patientforms</loc>
+  </url>
+  <url>
+    <loc>https://www.forestfamily.com/forms-anderson</loc>
+  </url>
+  <url>
+    <loc>https://www.forestfamily.com/forms-research</loc>
+  </url>
+  <url>
+    <loc>https://www.forestfamily.com/forms-burnet</loc>
+  </url>
+  <url>
+    <loc>https://www.forestfamily.com/forms-gattis</loc>
+  </url>
+  <url>
+    <loc>https://www.forestfamily.com/spanish-forms-main</loc>
+  </url>
+  <url>
+    <loc>https://www.forestfamily.com/spanish-forms-north</loc>
+  </url>
+  <url>
+    <loc>https://www.forestfamily.com/spanish-forms-rr</loc>
   </url>
 </urlset>
