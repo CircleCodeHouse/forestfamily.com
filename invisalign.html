@@ -9,11 +9,15 @@ amp_components:
 - amp-fit-text
 patients:
 - permalink: "/invisalign/gage/"
-  name: ''
-  photo: ''
+  name: Gage
+  photo: "/assets/uploads/gage_main.webp"
   description: ''
-  before_images: []
-  after_images: []
+  before_images:
+  - "/assets/uploads/gage_before_top.webp"
+  - "/assets/uploads/gage_after_bottom.webp"
+  after_images:
+  - "/assets/uploads/gage_after_top.webp"
+  - "/assets/uploads/gage_after_bottom-1.webp"
 - permalink: "/invisalign/brittani/"
   name: Brittani
   photo: assets/uploads/invisalign-Brittani.png
@@ -26,7 +30,7 @@ patients:
   - assets/uploads/brittani-after-2.jpg
 
 ---
-{% for _page in site.pages %}
+<img src="/assets/uploads/gage_main.webp"><img src="/assets/uploads/gage_before_top-1.webp"><img src="/assets/uploads/gage_after_bottom.webp"><img src="/assets/uploads/gage_before_top-2.webp"><img src="/assets/uploads/gage_after_top.webp"><img src="/assets/uploads/gage_after_bottom-1.webp">{% for _page in site.pages %}
 {% if _page.settings %}
 {% assign settings = _page %}
 {% endif %}
