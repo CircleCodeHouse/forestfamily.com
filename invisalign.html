@@ -10,7 +10,7 @@ amp_components:
 patients:
 - permalink: "/invisalign/gage/"
   name: Gage
-  photo: "/assets/uploads/invisalign-Gage.png"
+  photo: "assets/uploads/invisalign-Gage.png"
   description: ''
   before_images: []
   after_images: []
@@ -26,35 +26,23 @@ patients:
   - assets/uploads/brittani-after-2.jpg
 
 ---
-<img src="/assets/uploads/gage_main.webp"><img src="/assets/uploads/gage_before_top-1.webp"><img src="/assets/uploads/gage_after_bottom.webp"><img src="/assets/uploads/gage_before_top-2.webp"><img src="/assets/uploads/gage_after_top.webp"><img src="/assets/uploads/gage_after_bottom-1.webp">{% for _page in site.pages %}
+{% for _page in site.pages %}
 {% if _page.settings %}
 {% assign settings = _page %}
 {% endif %}
 {% endfor %}
 
 
-    <amp-carousel width="1280"
-    height="720"
-    layout="responsive"
-    type="slides"
-    autoplay
-    loop
-    animate-in="fade-in"
-    animate-in-duration=".5s"
-    delay="4000">
-    <div class="slide">
-      <amp-img src="/assets/uploads/invisalign-hero.png"
-        width="400"
-        height="250"
-        layout="responsive"
-        animate-in="fade-in"
-        animate-in-duration=".5s"
-        alt="a sample image"></amp-img>
-        <div style="width: 80%; position:absolute; top:10%; left: 10%;">
-        <amp-fit-text
-            class="text-light text-center font-weight-bold display-2" width="200" height="50" layout="responsive">
-            INVISALIGN - THE NEXT BIG THING
-        </amp-fit-text>
+<amp-carousel width="1280" height="720" layout="responsive" type="slides" autoplay loop animate-in="fade-in"
+  animate-in-duration=".5s" delay="4000">
+  <div class="slide">
+    <amp-img src="/assets/uploads/invisalign-hero.png" width="400" height="250" layout="responsive" animate-in="fade-in"
+      animate-in-duration=".5s" alt="a sample image"></amp-img>
+    <div style="width: 80%; position:absolute; top:10%; left: 10%;">
+      <amp-fit-text class="text-light text-center font-weight-bold display-2" width="200" height="50"
+        layout="responsive">
+        INVISALIGN - THE NEXT BIG THING
+      </amp-fit-text>
     </div>
 
   </div>
@@ -62,77 +50,76 @@ patients:
 </amp-carousel>
 
 <!-- Logo Section -->
-  <section>
-<div class="bg-brand-primary-dark">
+<section>
+  <div class="bg-brand-primary-dark">
 
-  <div class="container-fluid py-4">
-    <div class="row">
-      <div class="col p-4 text-center">
-        <button type="button" class="btn btn-outline-light btn-lg rounded-0 bg-brand-primary-dark"><h2 class="display-4">INVISALIGN</h2> </button>
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col p-4 text-center">
+          <button type="button" class="btn btn-outline-light btn-lg rounded-0 bg-brand-primary-dark">
+            <h2 class="display-4">INVISALIGN</h2>
+          </button>
+        </div>
       </div>
-    </div>
 
-    <div class="row justify-content-center">
+      <div class="row justify-content-center">
 
-      <div class="col-sm-12 col-md-6 p-0 text-center">
-        <amp-img src="/assets/uploads/invisalign-DrRobinBethell.png"
-        width="600"
-        height="850"
-        layout="responsive"
-        alt="and another sample image"></amp-img>
-    </div>
+        <div class="col-sm-12 col-md-6 p-0 text-center">
+          <amp-img src="/assets/uploads/invisalign-DrRobinBethell.png" width="600" height="850" layout="responsive"
+            alt="and another sample image"></amp-img>
+        </div>
 
-      <div class="col-sm-10 col-md-6 p-6 text-center">
-        <amp-fit-text
-        class="text-center" width="350" height="100" max-font-size="42" layout="responsive">
-        Invisalign® Better: Predictable, Fast, and Lead by Expert Platinum Dentists
-    </amp-fit-text>
+        <div class="col-sm-10 col-md-6 p-6 text-center">
+          <amp-fit-text class="text-center" width="350" height="100" max-font-size="42" layout="responsive">
+            Invisalign® Better: Predictable, Fast, and Lead by Expert Platinum Dentists
+          </amp-fit-text>
 
-    <amp-fit-text
-    class="text-center fixedblockn p-4" width="200" height="90" min-font-size="14" max-font-size="28" layout="responsive">
-    Led by Dr. Robin Bethell, VIP Invisalign Diamond level provider, Board member of the American Academy of Clear Aligners, Invisalign consultant and coach to dentists all over Texas.  Dr. Bethell believes that your best smile can be achieved naturally at any age.  Adult orthodontics reduces risks of periodontal disease, abnormal tooth wear, and prevents the results of aging smiles (we don't want to look long in the tooth) and allows us to restore them to their ideal function and aesthetics.
-</amp-fit-text>
+          <amp-fit-text class="text-center fixedblockn p-4" width="200" height="90" min-font-size="14"
+            max-font-size="28" layout="responsive">
+            Led by Dr. Robin Bethell, VIP Invisalign Diamond level provider, Board member of the American Academy of
+            Clear Aligners, Invisalign consultant and coach to dentists all over Texas. Dr. Bethell believes that your
+            best smile can be achieved naturally at any age. Adult orthodontics reduces risks of periodontal disease,
+            abnormal tooth wear, and prevents the results of aging smiles (we don't want to look long in the tooth) and
+            allows us to restore them to their ideal function and aesthetics.
+          </amp-fit-text>
 
-<amp-fit-text
-class="text-center fixedblock p-4" width="200" height="60" min-font-size="14" max-font-size="28" layout="responsive">
-All clear aligners are not equal.  Patient experience and results can vary greatly depending on the doctor and the products used.  There is no substitute for experience. Dr. Bethell has been providing Invisalign since 2006, and designs over 100 cases per month.  He believes orthodontics can be yours with lower costs, fewer dental appointments, and better long term results.
-</amp-fit-text>
+          <amp-fit-text class="text-center fixedblock p-4" width="200" height="60" min-font-size="14" max-font-size="28"
+            layout="responsive">
+            All clear aligners are not equal. Patient experience and results can vary greatly depending on the doctor
+            and the products used. There is no substitute for experience. Dr. Bethell has been providing Invisalign
+            since 2006, and designs over 100 cases per month. He believes orthodontics can be yours with lower costs,
+            fewer dental appointments, and better long term results.
+          </amp-fit-text>
 
-<amp-fit-text
-class="text-center fixedblock p-4" width="200" height="30" min-font-size="14" max-font-size="28" layout="responsive">
-We utilize iTero technology at all 3 locations, meaning extremely accurate scans and no goopy impressions.
-</amp-fit-text>
+          <amp-fit-text class="text-center fixedblock p-4" width="200" height="30" min-font-size="14" max-font-size="28"
+            layout="responsive">
+            We utilize iTero technology at all 3 locations, meaning extremely accurate scans and no goopy impressions.
+          </amp-fit-text>
 
-<div class="container">
-  <div class="row">
-    <div class="col-6">
-      <amp-img src="/assets/uploads/invisalign-logo-itero.png"
-      width="100"
-      height="50"
-      layout="responsive"
-      alt="and another sample image"></amp-img>
-    </div>
-    <div class="col-6">
-      <amp-img src="/assets/uploads/invisalign-logo-AACA.png"
-      width="100"
-      height="50"
-      layout="responsive"
-      alt="and another sample image"></amp-img>
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <amp-img src="/assets/uploads/invisalign-logo-itero.png" width="100" height="50" layout="responsive"
+                  alt="and another sample image"></amp-img>
+              </div>
+              <div class="col-6">
+                <amp-img src="/assets/uploads/invisalign-logo-AACA.png" width="100" height="50" layout="responsive"
+                  alt="and another sample image"></amp-img>
 
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
     </div>
   </div>
 
-</div>
-
-
-      </div>
-
-
-    </div>
-  </div>
-</div>
-
-  </section>
+</section>
 
 <!-- Before & After Section -->
 <section class="bg-brand-secondary-dark pb-4">
@@ -142,17 +129,12 @@ We utilize iTero technology at all 3 locations, meaning extremely accurate scans
 
   <div class="row no-gutters justify-content-center">
     {% for patient in page.patients %}
-      <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
-        <a href="{{ patient.permalink }}">
-          <amp-img src="/{{ patient.photo }}"
-            width="50"
-            height="55"
-            layout="responsive"
-            animate-in="fade-in"
-            animate-in-duration=".5s"
-            alt="{{ patient.name }}"></amp-img>
-          </a>
-      </div>
+    <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
+      <a href="{{ patient.permalink }}">
+        <amp-img src="/{{ patient.photo }}" width="50" height="55" layout="responsive" animate-in="fade-in"
+          animate-in-duration=".5s" alt="{{ patient.name }}"></amp-img>
+      </a>
+    </div>
     {% endfor %}
   </div>
 </section>
