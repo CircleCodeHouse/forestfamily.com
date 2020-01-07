@@ -10,9 +10,6 @@
     <loc>https://www.forestfamily.com/copy-of-faqs</loc>
   </url>
   <url>
-    <loc>https://www.forestfamily.com/locations</loc>
-  </url>
-  <url>
     <loc>https://www.forestfamily.com/patients</loc>
   </url>
   <url>
@@ -32,6 +29,9 @@
   </url>
   <url>
     <loc>https://www.forestfamily.com/service</loc>
+  </url>
+  <url>
+    <loc>https://www.forestfamily.com/locations</loc>
   </url>
   <url>
     <loc>https://www.forestfamily.com/patientforms</loc>
