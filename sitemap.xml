@@ -4,10 +4,10 @@
     <loc>https://www.forestfamily.com/</loc>
   </url>
   <url>
-    <loc>https://www.forestfamily.com/copy-of-faqs</loc>
+    <loc>https://www.forestfamily.com/about</loc>
   </url>
   <url>
-    <loc>https://www.forestfamily.com/about</loc>
+    <loc>https://www.forestfamily.com/copy-of-faqs</loc>
   </url>
   <url>
     <loc>https://www.forestfamily.com/locations</loc>
@@ -19,13 +19,13 @@
     <loc>https://www.forestfamily.com/appointments</loc>
   </url>
   <url>
-    <loc>https://www.forestfamily.com/drdisla</loc>
-  </url>
-  <url>
     <loc>https://www.forestfamily.com/drbethell</loc>
   </url>
   <url>
     <loc>https://www.forestfamily.com/drwait</loc>
+  </url>
+  <url>
+    <loc>https://www.forestfamily.com/drdisla</loc>
   </url>
   <url>
     <loc>https://www.forestfamily.com/insurance</loc>
