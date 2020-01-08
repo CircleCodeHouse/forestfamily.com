@@ -29,7 +29,6 @@ patients:
   photo: "/assets/uploads/invisalign-Evan.png"
   description: ''
   before_images:
-  - "/assets/uploads/Screen Shot 2020-01-08 at 9.02.38 AM.png"
   - "/assets/uploads/evan-before-2.png"
   - "/assets/uploads/evan-before-1.png"
   after_images:
@@ -55,7 +54,7 @@ patients:
   after_images: []
 
 ---
-<img src="/assets/uploads/Screen Shot 2020-01-08 at 9.02.38 AM.png">{% for _page in site.pages %}
+{% for _page in site.pages %}
 {% if _page.settings %}
 {% assign settings = _page %}
 {% endif %}
@@ -160,7 +159,7 @@ patients:
     {% for patient in page.patients %}
     <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
       <a href="{{ patient.permalink }}">
-        <amp-img src="/{{ patient.photo }}" width="50" height="55" layout="responsive" animate-in="fade-in"
+        <amp-img src="{{ patient.photo }}" width="50" height="55" layout="responsive" animate-in="fade-in"
           animate-in-duration=".5s" alt="{{ patient.name }}"></amp-img>
       </a>
     </div>

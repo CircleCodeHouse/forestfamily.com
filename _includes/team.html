@@ -8,7 +8,7 @@
   <div class="row justify-content-center">
     {% for member in settings.team %}
     <div class="col-sm-6 col-md-4 col-lg-3 text-center justify-content-center mb-4">
-      <amp-img src="/{{ member.photo }}" class="rounded-circle mb-2" width="50" height="50"
+      <amp-img src="{{ member.photo }}" class="rounded-circle mb-2" width="50" height="50"
         layout="responsive" animate-in="fade-in" animate-in-duration=".5s" alt="team-{{forloop.index}}"></amp-img>
       <div class="text-center">
         <h4>{{ member.name }}</h4>
