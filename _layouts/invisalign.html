@@ -15,7 +15,7 @@ layout: default
 {% endfor %}
 
 <section class="row px-0">
-  <div class="col-md-6 px-0 min-vh-100" style="background-image: url(/{{ invisalign.photo }}); background-size: cover; background-position-x: center;"></div>
+  <div class="col-md-6 px-0 min-vh-100" style="background-image: url({{ invisalign.photo }}); background-size: cover; background-position-x: center;"></div>
   <div class="col-md-6 pt-5" style="background-image: url(/assets/uploads/gray-topo-bg.png); background-size: cover; background-position-x: center;">
     <h1 class="text-white text-center">{{ invisalign.name }}</h1>
     <h2 class="text-white text-center">{{ invisalign.description }}</h2>
@@ -27,7 +27,7 @@ layout: default
     </div>
     {% for image in invisalign.before_images %}
       <div class="mr-3 mb-3">
-        <amp-img src="/{{image}}" width="275" layout="responsive"
+        <amp-img src="{{image}}" width="275" layout="responsive"
         animate-in="fade-in" animate-in-duration=".5s" alt="before-{{ forloop.index }}"></amp-img>
       </div>
     {% endfor %}
@@ -36,7 +36,7 @@ layout: default
     </div>
     {% for image in invisalign.after_images %}
       <div class="mr-3 mb-3">
-        <amp-img src="/{{image}}" width="275" layout="responsive"
+        <amp-img src="{{image}}" width="275" layout="responsive"
         animate-in="fade-in" animate-in-duration=".5s" alt="after-{{ forloop.index }}"></amp-img>
       </div>
     {% endfor %}

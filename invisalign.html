@@ -30,47 +30,11 @@ patients:
   description: ''
   before_images: []
   after_images: []
-- permalink: "/invisalign/jane/"
-  name: Jane
-  photo: "/assets/uploads/jane-main.jpg"
-  description: ''
-  before_images: []
-  after_images: []
-- permalink: "/invisalign/janan/"
-  name: Janan
-  photo: "/assets/uploads/janan-main.jpg"
-  description: ''
-  before_images: []
-  after_images: []
-- permalink: "/invisalign/evan/"
-  name: Evan
-  photo: "/assets/uploads/evan-main.jpg"
-  description: ''
-  before_images: []
-  after_images: []
-- permalink: "/invisalign/lisa/"
-  name: Lisa
-  photo: "/assets/uploads/lisa-main.jpg"
-  description: ''
-  before_images: []
-  after_images: []
-- permalink: "/invisalign/melissa/"
-  name: melissa
-  photo: "/assets/uploads/melissa-main.jpg"
-  description: ''
-  before_images: []
-  after_images: []
-- permalink: "/invisalign/jeri/"
-  name: Jeri
-  photo: "/assets/uploads/jeri-main.jpg"
-  description: ''
-  before_images: []
-  after_images: []
 
 
 
 ---
-<img src="/assets/uploads/lilian-main-1.jpg"><img src="/assets/uploads/jane-main.jpg"><img src="/assets/uploads/janan-main.jpg"><img src="/assets/uploads/evan-main.jpg"><img src="/assets/uploads/lisa-main-1.jpg"><img src="/assets/uploads/melissa-main.jpg"><img src="/assets/uploads/jeri-main.jpg">{% for _page in site.pages %}
+{% for _page in site.pages %}
 {% if _page.settings %}
 {% assign settings = _page %}
 {% endif %}
@@ -175,7 +139,7 @@ patients:
     {% for patient in page.patients %}
     <div class="col-sm-10 col-md-3 m-2 text-center justify-content-center">
       <a href="{{ patient.permalink }}">
-        <amp-img src="/{{ patient.photo }}" width="50" height="55" layout="responsive" animate-in="fade-in"
+        <amp-img src="{{ patient.photo }}" width="50" height="55" layout="responsive" animate-in="fade-in"
           animate-in-duration=".5s" alt="{{ patient.name }}"></amp-img>
       </a>
     </div>
