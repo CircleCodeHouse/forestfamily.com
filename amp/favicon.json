@@ -1,6 +1,6 @@
 
 {
-  "masterPicture": "./assets/uploads/footer-image.png",
+  "masterPicture": ".//assets/uploads/footer-image.png",
   "iconsPath": "/assets/favicons/",
   "design": {
     "ios": {
