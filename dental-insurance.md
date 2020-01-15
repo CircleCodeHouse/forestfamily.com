@@ -7,16 +7,6 @@ description: ''
 published: false
 
 ---
----
-layout: default
-permalink: '/dentalinsurance/'
-title: Dental Insurance
-head_title: ''
-description: ''
-amp_components:
-  - amp-fit-text
----
-
 {% for _page in site.pages %} 
 {% if _page.settings %} 
 {% assign settings = _page %} 
