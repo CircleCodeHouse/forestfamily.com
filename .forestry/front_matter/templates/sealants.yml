@@ -31,7 +31,6 @@ fields:
     required: false
   label: description
 pages:
-- dental-insurance.md
 - fillings.md
 - implants.md
 - sealants.md

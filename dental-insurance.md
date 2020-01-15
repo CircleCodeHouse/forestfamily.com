@@ -1,9 +1,13 @@
 ---
-layout: page
+layout: default
 title: Dental Insurance
 permalink: "/dentalinsurance/"
 head_title: ''
 description: ''
+amp_components: []
+form_groups:
+  english: []
+  spanish: []
 published: false
 
 ---
