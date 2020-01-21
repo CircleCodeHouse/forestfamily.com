@@ -7,19 +7,22 @@
     <loc>https://www.forestfamily.com/about</loc>
   </url>
   <url>
-    <loc>https://www.forestfamily.com/locations</loc>
-  </url>
-  <url>
-    <loc>https://www.forestfamily.com/appointments</loc>
-  </url>
-  <url>
     <loc>https://www.forestfamily.com/copy-of-faqs</loc>
   </url>
   <url>
     <loc>https://www.forestfamily.com/patients</loc>
   </url>
   <url>
+    <loc>https://www.forestfamily.com/appointments</loc>
+  </url>
+  <url>
     <loc>https://www.forestfamily.com/drbethell</loc>
+  </url>
+  <url>
+    <loc>https://www.forestfamily.com/drhagan</loc>
+  </url>
+  <url>
+    <loc>https://www.forestfamily.com/drdisla</loc>
   </url>
   <url>
     <loc>https://www.forestfamily.com/insurance</loc>
@@ -28,33 +31,30 @@
     <loc>https://www.forestfamily.com/service</loc>
   </url>
   <url>
-    <loc>https://www.forestfamily.com/drhagan</loc>
+    <loc>https://www.forestfamily.com/locations</loc>
   </url>
   <url>
     <loc>https://www.forestfamily.com/patientforms</loc>
   </url>
   <url>
-    <loc>https://www.forestfamily.com/drdisla</loc>
-  </url>
-  <url>
-    <loc>https://www.forestfamily.com/forms-research</loc>
+    <loc>https://www.forestfamily.com/forms-anderson</loc>
   </url>
   <url>
     <loc>https://www.forestfamily.com/forms-burnet</loc>
   </url>
   <url>
-    <loc>https://www.forestfamily.com/forms-anderson</loc>
-  </url>
-  <url>
-    <loc>https://www.forestfamily.com/spanish-forms-north</loc>
+    <loc>https://www.forestfamily.com/forms-gattis</loc>
   </url>
   <url>
     <loc>https://www.forestfamily.com/spanish-forms-main</loc>
   </url>
   <url>
-    <loc>https://www.forestfamily.com/forms-gattis</loc>
+    <loc>https://www.forestfamily.com/spanish-forms-north</loc>
   </url>
   <url>
     <loc>https://www.forestfamily.com/spanish-forms-rr</loc>
+  </url>
+  <url>
+    <loc>https://www.forestfamily.com/forms-research</loc>
   </url>
 </urlset>
