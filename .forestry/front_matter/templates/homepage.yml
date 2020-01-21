@@ -1,0 +1,25 @@
+---
+label: Homepage
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: title
+  label: title
+- type: text
+  name: head_title
+  label: head_title
+- type: text
+  name: description
+  label: description
+- type: list
+  name: amp_components
+  label: amp_components
+- type: image_gallery
+  name: carousel
+  label: carousel
