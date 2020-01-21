@@ -23,3 +23,5 @@ fields:
 - type: image_gallery
   name: carousel
   label: carousel
+pages:
+- index.html
