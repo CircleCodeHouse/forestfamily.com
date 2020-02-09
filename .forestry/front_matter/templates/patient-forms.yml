@@ -59,5 +59,4 @@ fields:
         name: link
         label: link
 pages:
-- dental-insurance.md
 - patientforms.html
