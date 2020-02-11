@@ -16,42 +16,53 @@ amp_components:
 {% endfor %}
 
 
-    <amp-carousel width="1280"
-    height="720"
-    layout="responsive"
-    type="slides"
-    autoplay
-    loop
-    animate-in="fade-in"
-    animate-in-duration=".5s"
-    delay="4000">
-    <div class="slide">
-      <amp-img src="/assets/uploads/hero-inside-office.jpg"
-        width="400"
-        height="250"
-        layout="responsive"
-        animate-in="fade-in"
-        animate-in-duration=".5s"
-        alt="a sample image"></amp-img>
-        <div style="width: 80%; position:absolute; top:10%; left: 10%;">
-        <amp-fit-text
-            class="text-light text-center font-weight-bold display-2" width="200" height="50" layout="responsive">
-            RESERVE YOUR APPOINTMENT
-        </amp-fit-text>
-    </div>
 
-  </div>
-
-</amp-carousel>
 
 <!-- Reserve Appointment Form Section -->
 <section>
   <div class="bg-brand-primary-dark">
 
-      <div class="container-fluid p-4 pb-4">
+      <div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-6 p-0">
+  <amp-carousel width="640"
+  height="1600"
+  layout="responsive"
+  type="slides"
+  autoplay
+  loop
+  animate-in="fade-in"
+  animate-in-duration=".5s"
+  delay="4000">
+  <div class="slide">
+    <amp-img src="/assets/images/reserve-appointment-vertical.jpg"
+      width="640"
+      height="1600"
+      layout="responsive"
+      animate-in="fade-in"
+      animate-in-duration=".5s"
+      alt="a sample image"></amp-img>
+      <div style="width: 80%; position:absolute; top:10%; left: 10%;">
+        <amp-fit-text class="text-light text-center font-weight-bold display-2" width="200" height="50"
+          layout="responsive" style="text-shadow: 1px 1px 1px black;">
+          RESERVE YOUR APPOINTMENT
+        </amp-fit-text>
+      </div>
+
+</div>
+
+</amp-carousel>
+
+</div>
+
+<div class="col col-md-6 p-4 pb-4">
+
+
       <div class="row pb-4">
       <div class="col p-4 text-center">
-        <button type="button" class="btn btn-outline-light btn-lg rounded-0 bg-brand-primary-dark"><h2 class="display-4">APPOINTMENT REQUEST</h2> </button>
+        <div class="d-flex justify-content-center">
+          <h1 class="display-4 border border-white p-4 mb-4">APPOINTMENT REQUEST</h1>
+        </div>
       </div>
     </div>
 
@@ -397,6 +408,14 @@ amp_components:
 
 
 </form>
+
+
+  
+</div>
+
+</div>
+
+</div>
 </div>
 <!-- END FORM -->
 
