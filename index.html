@@ -20,7 +20,7 @@ carousel:
 {% endif %}
 {% endfor %}
 
-<section class="container-fluid px-0">
+<section class="px-0">
   <amp-carousel width="1280" height="720" layout="responsive" type="slides" autoplay loop animate-in="fade-in"
     animate-in-duration=".5s" delay="4000">
     {% for image in page.carousel %}
@@ -28,7 +28,7 @@ carousel:
         <amp-img src="{{image}}" width="400" height="250" layout="responsive" animate-in="fade-in"
           animate-in-duration=".5s" alt="a sample image"></amp-img>
         <div style="width: 80%; position:absolute; top:10%; left: 10%;">
-          <amp-fit-text class="text-light text-center font-weight-bold display-2" width="200" height="50"
+          <amp-fit-text class="text-light text-center font-weight-bold display-1" width="200" height="50"
             layout="responsive" style="text-shadow: 1px 1px 1px black;">
             WELCOME TO THE FAMILY
           </amp-fit-text>
@@ -40,13 +40,12 @@ carousel:
 
 
 <!-- Logo Section -->
-<section class="bg-brand-primary-dark container-fluid">
-
-  <div class="py-4">
+<section class="bg-brand-primary-dark">
+  <div class="container py-4">
     <div class="row">
       <div class="col p-4 text-center">
         <div class="d-flex justify-content-center">
-          <h1 class="display-4 border border-white p-4 mb-4">WHO WE ARE</h1>
+          <h2 class="display-4 border border-white p-4 mb-4">WHO WE ARE</h2>
         </div>
       </div>
     </div>
@@ -59,20 +58,22 @@ carousel:
 
     <div class="row justify-content-center">
       <div class="col-sm-10 col-md-8 p-4 text-center">
-        <amp-fit-text class="text-center" width="350" height="100" layout="responsive">
+        <h3 class="text-center">
           Dental professionals with the mission to create an enjoyable &amp; efficient experience for you.
-        </amp-fit-text>
+        </h3>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Locations Section -->
-<section class="container-fluid px-0 bg-brand-secondary-dark">
-  <div class="row">
-    <div class="col p-4 text-center">
-      <div class="d-flex justify-content-center">
-        <h1 class="display-4 border border-white p-4 mb-4">LOCATIONS</h1>
+<section class="px-0 bg-brand-secondary-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col p-4 text-center">
+        <div class="d-flex justify-content-center">
+          <h1 class="display-4 border border-white p-4 mb-4">LOCATIONS</h1>
+        </div>
       </div>
     </div>
   </div>
