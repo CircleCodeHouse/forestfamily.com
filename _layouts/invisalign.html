@@ -14,9 +14,9 @@ layout: default
   {% endif %}
 {% endfor %}
 
-<section class="row px-0">
-  <div class="col-md-6 px-0 min-vh-100" style="background-image: url({{ invisalign.photo }}); background-size: cover; background-position-x: center;"></div>
-  <div class="col-md-6 pt-5" style="background-image: url(/assets/uploads/gray-topo-bg.png); background-size: cover; background-position-x: center;">
+<section class="row px-0 pl-3 pr-3 pr-md-3 d-flex justify-content-between" style="background-image: url(/assets/uploads/gray-topo-bg.png); background-size: cover; background-position-x: center;">
+  <div class="col-md-5 px-0 ml-3 mr-3 mr-md-3 mt-3" style="background-image: url({{ invisalign.photo }}); background-repeat: no-repeat; background-size: contain; background-position-x: center; min-height: 50vh"></div>
+  <div class="col-md-6 pt-5">
     <h1 class="text-white text-center">{{ invisalign.name }}</h1>
     <h2 class="text-white text-center">{{ invisalign.description }}</h2>
     <div class="d-flex justify-content-center">
